@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "holberton.h"
 
 /**
   *read_line -  functions that reads the line
@@ -12,6 +11,7 @@ char *read_line()
 	int i;
 
 	i = getline(&line, &size, stdin);
+	line[i - 1] = '\0';
 
 	if (i == EOF)
 	{
