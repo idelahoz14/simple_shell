@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <strings.h>
+#include "holberton.h"
 
 /**
   *split - function that splits a string
