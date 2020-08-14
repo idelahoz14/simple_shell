@@ -15,7 +15,7 @@ char *read_line()
 
 	if (i == EOF)
 	{
-		free(line)
+		free(line);
 		return (NULL);
 	}
 	return (line);
