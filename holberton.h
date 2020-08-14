@@ -14,6 +14,7 @@ char **split(char *line);
 char *read_line();
 int process(char **ptr);
 int _strcmp(char *s1, char *s2);
+int environment(char **env);
 
 extern char **environ;
 
