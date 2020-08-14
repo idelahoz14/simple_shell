@@ -17,6 +17,10 @@ int main(void)
 			free(line);
 			exit(EXIT_FAILURE);
 		}
+		if (!_strcmp(line, "env"))
+		{
+			environment(environ);
+		}
 		array = split(line);
 		process(array);
 	}while(1);
