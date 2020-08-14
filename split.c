@@ -11,9 +11,6 @@ char **split(char *line)
 	char **nest = malloc((sizeof(char *)) * (1024));
 	int i = 0;
 
-	nest[i] = token;
-	i++;
-
 	while (token != NULL)
 	{
 		nest[i] = token;
