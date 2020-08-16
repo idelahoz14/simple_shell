@@ -1,0 +1,36 @@
+./" This is simple_shell
+.TH man 1 "16 Aug 2020" "simple_shell man page"
+.SH NAME
+.B simple_shell
+- simple shell that can be compiled and executed from the command line.
+.SH SYNOPSIS
+.B ./hsh
+
+.SH DESCRIPTION
+Simple shell that can be compiled and executed.
+
+.SH EXAMPLES
+
+.IP -Compilling
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+
+.IP -Interactive mode.
+.PP
+.B ./hsh
+
+.B /bin/ls
+
+.IP -Non-interactive mode.
+B. echo "/bin/ls" | ./hsh
+
+
+.SH BUGS
+
+No known bugs.
+
+.SH AUTHORS
+Isaac De La Hoz
+.B 1902@holbertonschool.com
+
+Clara Castaño
+.B 1980@holbertonschool.com
