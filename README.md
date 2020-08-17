@@ -41,5 +41,6 @@ To execute it, we have to check that the executable file is generated:
 trusty-64:~/simple_shell$ ./hsh
 In our case, the executable file would be hsh, and to execute it we used ./ and the file name.
 
-![Holberton logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.holbertonschool.com%2Fvisit_campus&psig=AOvVaw1j9mEoV4brGC7h0oTq9h3E&ust=1597789576507000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjj6ZOko-sCFQAAAAAdAAAAABAD) 
+![Holberton logo](https://camo.githubusercontent.com/80e4aef5357b80f03b960818a751e2be258ccc97/68747470733a2f2f7777772e686f6c626572746f6e7363686f6f6c2e636f6d2f686f6c626572746f6e2d6c6f676f2e706e67)
+
 **Designed by [Clara Castaño](https://github.com/ClaraCastaD) and [Isaac De La Hoz](https://github.com/idelahoz14), cohort 12.**
