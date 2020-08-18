@@ -27,6 +27,8 @@ int main(void)
 		{
 		array = split(line);
 		process(array);
+		free(line);
+		free(array);
 		}
 	}while(1);
 	return (0);
