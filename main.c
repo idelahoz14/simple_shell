@@ -9,7 +9,7 @@ int main(void)
 	char *line;
 	char **array;
 
-	do{
+	do {
 		signal(SIGINT, CTRL_C);
 		write(STDOUT_FILENO, "$ ", 2);
 		line = read_line();
@@ -30,12 +30,12 @@ int main(void)
 		free(line);
 		free(array);
 		}
-	}while(1);
+	} while (1);
 	return (0);
 }
 
 /**
- * control - function for Ctrl + C
+ * CTRL_C - function for Ctrl + C
  * @signal: int.
  * Return: nothing.
  */
