@@ -15,6 +15,7 @@ char *read_line();
 int process(char **ptr);
 int _strcmp(char *s1, char *s2);
 int environment(char **env);
+void CTRL_C(int signal);
 
 extern char **environ;
 
