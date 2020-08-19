@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- *
- *
+ * process - execute typed command
+ * @ptr: Contains command and flags
+ * Return: Always 0.
  */
 
 int process(char **ptr)
@@ -19,7 +20,7 @@ int process(char **ptr)
 	}
 	if (child_pid == 0)
 	{
-		if (execve(command, ptr, NULL) == -1)
+		if (execve(command, ptr, environ) == -1)
 		{
 			perror("Error: execve");
 		}
