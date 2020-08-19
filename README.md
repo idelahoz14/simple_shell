@@ -2,7 +2,7 @@
 
 ## Introduction:
 
-In this project we've created our own simple shell. To do this, we must understand very well the system calls,how do the environment variables work, how does the shell work. 
+In this project we've created our own simple shell. To do this, we must understand very well the system calls,how do the environment variables work, how does the shell work.
 Thanks to this project, we could implement everything we learned in the trimester.
 
 ## Description:
@@ -20,7 +20,7 @@ The shell project consist in write our own simple shell, meeting the proposed re
 * A README.md file, at the root of the folder of the project is mandatory
 * Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
 * Your shell should not have any memory leaks
-* No more than 5 functions per file	
+* No more than 5 functions per file
 * All your header files should be include guarded
 * Use system calls only when you need to (why?)
 
@@ -31,7 +31,7 @@ There should be one project repository per group. If you clone/fork/whatever a p
 ## How to install it.
 
 This shell is written in C programming language.
-To start using our simple shell you have to clone the repository 
+To start using our simple shell you have to clone the repository
 git clone https://github.com/idelahoz14/simple_shell.git
 
 ## How to compile it:
