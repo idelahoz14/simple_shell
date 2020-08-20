@@ -14,6 +14,7 @@ int main(void)
 		line = read_line();
 		if (line == NULL)
 		{
+			write(STDOUT_FILENO, "\n", 1);
 			free(line);
 			break;
 		}
@@ -22,7 +23,7 @@ int main(void)
 			if (!_strcmp(line, "exit"))
 			{
 				free(line);
-				exit(EXIT_FAILURE);
+				exit(EXIT_SUCCESS);
 			}
 			if (!_strcmp(line, "env"))
 			{
