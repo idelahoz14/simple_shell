@@ -32,37 +32,37 @@ There should be one project repository per group. If you clone/fork/whatever a p
 
 This functions and system calls are the only ones that we are allowed to use.
 
-FUNCTION	MAN
-access	man 2 access
-chdir	man 2 chdir
-close	man 2 close
-closedir	man 3 closedir
-execve	man 2 execve
-exit	man 3 exit
-_exit	man 2 _exit
-fflush	man 3 fflush
-fork	man 2 fork
-free	man 3 free
-getcwd	man 3 getcwd
-getline	man 3 getline
-isatty	man 3 isatty
-kill	man 2 kill
-malloc	man 3 malloc
-open	man 2 open
-opendir	man 3 opendir
-perror	man 3 perror
-read	man 2 read
-readdir	man 3 readdir
-signal	man 2 signal
-stat (__xstat)	man 2 stat
-lstat (__lxstat)	man 2 lstat
-fstat (__fxstat)	man 2 fstat
-strtok	man 3 strtok
-wait	man 2 wait
-waitpid	man 2 waitpid
-wait3	man 2 wait3
-wait4	man 2 wait4
-write	man 2 write
+* FUNCTION	MAN
+* access	man 2 access
+* chdir	man 2 chdir
+* close	man 2 close
+* closedir	man 3 closedir
+* execve	man 2 execve
+* exit	man 3 exit
+* _exit	man 2 _exit
+* fflush	man 3 fflush
+* fork	man 2 fork
+* free	man 3 free
+* getcwd	man 3 getcwd
+* getline	man 3 getline
+* isatty	man 3 isatty
+* kill	man 2 kill
+* malloc	man 3 malloc
+* open	man 2 open
+* opendir	man 3 opendir
+* perror	man 3 perror
+* read	man 2 read
+* readdir	man 3 readdir
+* signal	man 2 signal
+* stat (__xstat)	man 2 stat
+* lstat (__lxstat)	man 2 lstat
+* fstat (__fxstat)	man 2 fstat
+* strtok	man 3 strtok
+* wait	man 2 wait
+* waitpid	man 2 waitpid
+* wait3	man 2 wait3
+* wait4	man 2 wait4
+* write	man 2 write
 
 ## How to install it.
 
@@ -98,29 +98,29 @@ You can feel to try and report any bug you find in the Shell to me.
 
 ## Header file
 
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+* #ifndef _HOLBERTON_H_
+* #define _HOLBERTON_H_
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
-#include <sys/wait.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <errno.h>
+* #include <stdio.h>
+* #include <stdlib.h>
+* #include <unistd.h>
+* #include <string.h>
+* #include <sys/wait.h>
+* #include <sys/types.h>
+* #include <sys/stat.h>
+* #include <errno.h>
 
-char **split(char *line);
-char *read_line();
-int process(char **ptr);
-int _strcmp(char *s1, char *s2);
-int environment(char **env);
-void CTRL_C(int signal);
-int _strlen(char *s);
+* char **split(char *line);
+* char *read_line();
+* int process(char **ptr);
+* int _strcmp(char *s1, char *s2);
+* int environment(char **env);
+* void CTRL_C(int signal);
+* int _strlen(char *s);
 
-extern char **environ;
+* extern char **environ;
 
-#endif
+* #endif
 
 ![Holberton logo](https://camo.githubusercontent.com/80e4aef5357b80f03b960818a751e2be258ccc97/68747470733a2f2f7777772e686f6c626572746f6e7363686f6f6c2e636f6d2f686f6c626572746f6e2d6c6f676f2e706e67)
 
