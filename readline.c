@@ -8,7 +8,7 @@ char *read_line()
 {
 	char *line = NULL;
 	size_t size = 0;
-	int i = 0;
+	int i;
 
 	i = getline(&line, &size, stdin);
 
@@ -17,7 +17,6 @@ char *read_line()
 		free(line);
 		return (NULL);
 	}
-	line[size] = '\0';
+	line[i - 1] = '\0';
 	return (line);
-	free(line);
 }

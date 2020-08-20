@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	char *line = NULL;
-	char **array = NULL;
+	char *line;
+	char **array;
 
 	do {
 		signal(SIGINT, CTRL_C);
@@ -17,23 +17,31 @@ int main(void)
 			free(line);
 			break;
 		}
-		if (!_strcmp(line, "exit"))
+		if (line[0] != '\n')
 		{
-			free(line);
-			exit(EXIT_FAILURE);
+			if (!_strcmp(line, "exit"))
+			{
+				free(line);
+				exit(EXIT_FAILURE);
+			}
+			if (!_strcmp(line, "env"))
+			{
+				environment(environ);
+			}
+			else
+			{
+				array = split(line);
+				if (*array == NULL)
+				{
+					free(line);
+					free(array);
+					continue;
+				}
+				process(array);
+				free(array);
+			}
 		}
-		if (!_strcmp(line, "env"))
-		{
-			environment(environ);
-			free(line);
-		}
-		else
-		{
-		array = split(line);
-		process(array);
 		free(line);
-		free(array);
-		}
 	} while (1);
 	return (0);
 }
