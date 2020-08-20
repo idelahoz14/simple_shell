@@ -26,7 +26,7 @@ int process(char **ptr)
 			free(ptr);
 			exit(EXIT_FAILURE);
 		}
-         		if (execve(command, ptr, environ) == -1)
+		if (execve(command, ptr, environ) == -1)
 		{
 			perror("Error: execve");
 			free(command);
