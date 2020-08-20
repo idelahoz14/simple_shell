@@ -10,11 +10,11 @@ int main(void)
 
 	do {
 		signal(SIGINT, CTRL_C);
-		write(STDOUT_FILENO, "$ ", 2);
+		if (isatty(STDIN_FILENO) == 1)
+			write(STDOUT_FILENO, "$ ", 2);
 		line = read_line();
 		if (line == NULL)
 		{
-			write(STDOUT_FILENO, "\n", 1);
 			free(line);
 			break;
 		}
