@@ -17,5 +17,6 @@ char *read_line()
 		free(line);
 		return (NULL);
 	}
+	line[i - 1] = '\0';
 	return (line);
 }
