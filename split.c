@@ -19,4 +19,5 @@ char **split(char *line)
 	}
 	nest[i] = NULL;
 	return (nest);
+	free(nest);
 }

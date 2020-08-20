@@ -20,9 +20,17 @@ int process(char **ptr)
 	}
 	if (child_pid == 0)
 	{
-		if (execve(command, ptr, environ) == -1)
+		if (command == NULL)
+		{
+			free(command);
+			free(ptr);
+			exit(EXIT_FAILURE);
+		}
+         		if (execve(command, ptr, environ) == -1)
 		{
 			perror("Error: execve");
+			free(command);
+			free(ptr);
 		}
 		exit(EXIT_FAILURE);
 	}

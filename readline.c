@@ -11,12 +11,13 @@ char *read_line()
 	int i;
 
 	i = getline(&line, &size, stdin);
-	line[i - 1] = '\0';
 
 	if (i == EOF)
 	{
 		free(line);
 		return (NULL);
 	}
+	line[i - 1] = '\0';
 	return (line);
+	free(line);
 }

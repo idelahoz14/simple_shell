@@ -3,16 +3,20 @@
  * main - shell project
  * Return: Always 0.
  */
-
 int main(void)
 {
-	char *line;
-	char **array;
+	char *line = NULL;
+	char **array = NULL;
 
 	do {
 		signal(SIGINT, CTRL_C);
 		write(STDOUT_FILENO, "$ ", 2);
 		line = read_line();
+		if (line == NULL)
+		{
+			free(line);
+			break;
+		}
 		if (!_strcmp(line, "exit"))
 		{
 			free(line);
@@ -42,6 +46,6 @@ int main(void)
 void CTRL_C(int signal)
 {
 	(void)signal;
-	write(STDOUT_FILENO, "\nFinished process\n", 18);
+	write(STDOUT_FILENO, "\n", 1);
 	write(STDOUT_FILENO, "$ ", 2);
 }
